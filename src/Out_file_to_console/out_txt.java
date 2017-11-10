@@ -1,3 +1,5 @@
+package Out_file_to_console;
+
 import java.io.*;
 
 public class out_txt {

@@ -1,3 +1,5 @@
+package lesson1;
+
 public class yolka {
     public static void main(String[] args) {
         //выводим верхушку, три tab, двойной слеш в конце для спец встаки слеша
