@@ -15,7 +15,6 @@ public class out_txt {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         // создаем переменную или конструктор для объекта f для чтения файла mario.txt
         File f = new File(classDirectory + "\\src\\mario.txt");
-
         BufferedReader fin = new BufferedReader(new FileReader(f));
         // создаем переменную для строки
         String line;
