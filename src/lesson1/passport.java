@@ -6,11 +6,11 @@ public class passport {
 
     // Создаем свой метод для проверки целых чисел
 
-    public static int getInt(){
+    public static int getInt() {
         //System.out.println("Введите число:");
         Scanner in = new Scanner(System.in);// Создаем объект Scanner
         int num;
-        if(in.hasNextInt()){
+        if (in.hasNextInt()) {
             num = in.nextInt();
         } else {
             System.out.print("Please enter integer! ");
@@ -19,6 +19,7 @@ public class passport {
         }
         return num;
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); // Создаем объект Scanner
         //запрашиваем имя
@@ -43,24 +44,22 @@ public class passport {
             System.out.print("Please, enter Your gender, male or famale: ");
             gender = sc.nextLine();
 
-        } while ((!gender.equals("male"))&(!gender.equals("famale"))); //проверка усливия
+        } while ((!gender.equals("male")) & (!gender.equals("famale"))); //проверка усливия
 
         //выводим все в консоль
         System.out.println("-------------------- PASSPORT --------------------");
         System.out.println("--------------------------------------------------");
         System.out.println("-----");
-        System.out.println("----- Person: "+name+" "+surname);
+        System.out.println("----- Person: " + name + " " + surname);
         System.out.println("-----");
-        System.out.println("----- Gender: "+gender+", age "+age);
+        System.out.println("----- Gender: " + gender + ", age " + age);
         System.out.println("-----");
-        System.out.println("----- Location: from - "+born+", current - "+locate);
+        System.out.println("----- Location: from - " + born + ", current - " + locate);
         System.out.println("-----");
         System.out.println("--------------------------------------------------");
         System.out.println("--------------------------------------------------");
     }
 
 
-
-
-    }
+}
 
