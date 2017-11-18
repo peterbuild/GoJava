@@ -1,24 +1,14 @@
 package lesson1;
 
+import my_library.checks_inputs;
+
 import java.util.Scanner;
 
 public class passport {
 
     // Создаем свой метод для проверки целых чисел
 
-    public static int getInt() {
-        //System.out.println("Введите число:");
-        Scanner in = new Scanner(System.in);// Создаем объект Scanner
-        int num;
-        if (in.hasNextInt()) {
-            num = in.nextInt();
-        } else {
-            System.out.print("Please enter integer! ");
-            in.next();//рекурсия
-            num = getInt();
-        }
-        return num;
-    }
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); // Создаем объект Scanner
@@ -30,7 +20,7 @@ public class passport {
         String surname = sc.nextLine();
         //Запрашиваем возраст
         System.out.print("Please, enter Your age: ");
-        int age = getInt();
+        int age = checks_inputs.getInt();
 
         //Запрашиваем место рождения
         System.out.print("Please enter the city where you were born: ");

@@ -1,13 +1,15 @@
 package lesson1;
 
+import my_library.checks_inputs;
+
 public class calc {
     public static void main(String[] args) {
         //Запрашиваем первое число
         System.out.print("Enter the first number: ");
-        int first = passport.getInt();
+        int first = checks_inputs.getInt();
         //Запрашиваем второе
         System.out.print("Enter the second number: ");
-        int second = passport.getInt();
+        int second = checks_inputs.getInt();
 
         System.out.println(first + " + " + second + " = " + (first + second));
         System.out.println(first + " * " + second + " = " + (first * second));
