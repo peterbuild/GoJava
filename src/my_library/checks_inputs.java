@@ -23,7 +23,6 @@ public class checks_inputs {
         Scanner in = new Scanner(System.in);
         String str;
         int num;
-
         while(true) {
             //System.out.print("Please enter integer: ");
             str = in.nextLine();
@@ -31,15 +30,34 @@ public class checks_inputs {
                 num = Integer.parseInt(str);
                 break;
             } catch (Exception e) {
-                System.err.print("This not integer!!! Please enter integer: ");
+                System.err.print(str +" not integer!!! Please enter integer: ");
+            }
+        }
+        return num;
+    }
+    public static float getfloat() {
+        Scanner in = new Scanner(System.in);
+        String str;
+        float num;
+        while(true) {
+            //System.out.print("Please enter integer: ");
+            str = in.nextLine();
+            try {
+                num = Float.parseFloat(str);
+                break;
+            } catch (Exception e) {
+                System.err.print(str + " not float!!! Please enter float: ");
             }
         }
         return num;
     }
 
+
     public static void main(String[] args) {
-    getInt();
-    getInt2();
+    //getInt();
+    //getInt2();
+        float num = getfloat();
+        System.out.println(num);
 
     }
 }
