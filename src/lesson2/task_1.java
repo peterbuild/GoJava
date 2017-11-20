@@ -10,8 +10,5 @@ public class task_1 {
         System.out.print("enter float number B: ");
         float b = checks_inputs.getfloat();
         System.out.println("A + B = " + (a + b));
-
-
-
     }
 }
