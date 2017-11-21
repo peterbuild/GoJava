@@ -23,6 +23,7 @@ public class task_10 {
                 break;
         }
         System.out.println("How many times does the " + str2 + " in the " + str1 + " : " + cnt);
-        System.out.println("Where " + str2 + " in " + str1 + " occurs in the first time? " + str1.indexOf(str2) + 1);
+        if (contains)
+            System.out.println("Where " + str2 + " in " + str1 + " occurs in the first time? " + str1.indexOf(str2) + 1);
     }
 }
